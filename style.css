@@ -48,3 +48,6 @@ header{
 .menu nav a:hover::after{
     width: 50px;
 }
+body{
+    background-color: whitesmoke;
+}
