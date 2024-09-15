@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+*{
+    margin: 0; /* Define a margem geral do projeto (pois esta na *) */
+    padding: 0; /* Define o espaço entre o conteúdo de um elemento e sua borda */
+    box-sizing: border-box; /* Determina como o tamanho total de um elemento é calculado */
+}
+.container{
+    max-width: 3000px; /* Define a largura máxima do container */
+    display: flex; /* Coloca o container como um container flexível de acordo com o modelo flexbox, ou seja os filhos são tratados como itens flexiveis e são alinhados e distribuidos */
+    align-items: center; /* Alinha os itens filhos ao longo do eixo transversa */
+    justify-content: center; /* Alinha os itens filhos ao longo do eixo principal */
+}
+header{
+    background-color:orange;
+    width: 100%; /*Define a largura de um elemento*/
+    padding: 5px;
+
+}
+.logo{
+    width: 20%;
+    
+}
+.menu{
+    width: 75%;
+   
+    text-transform: uppercase;
+
+}
+.menu nav a{
+    
+    font-size: 40px;
+    text-decoration: none;
+    color:whitesmoke;
+    padding-right: 90px;
+    font-family: "Lalezar", system-ui;
+    position: relative;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition: 0.5s;
+}
+.menu nav a:hover::after{
+    width: 50px;
+}
