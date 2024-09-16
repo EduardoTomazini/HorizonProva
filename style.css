@@ -63,4 +63,19 @@ body{
     font-size: 70px;
     padding-left: 50px; /* Muda a frase1 de forma horizontal */
 }
-
+.rodape{
+    position: relative;
+    background-color: orange;
+    display: grid;
+    height: 105px;
+}
+.logorodape{
+    position: absolute;
+}
+.textorodape{
+    align-self: center; /* Alinhamento vertical em relação ao grid */
+    font-family: "Lalezar", system-ui;
+    color: whitesmoke;
+    font-size: 25px;
+    justify-self: center; /* Alinhamento horizontal em relação ao grid */
+}
