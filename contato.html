@@ -59,16 +59,23 @@
                 Domingo: Fechado
             </p>
         </div>
-        <div class="formulario">
-            <form action="">
-                <fieldset>
-                    <div>
-                        <label> Nome </label>
-                        <input type="text" name="nome" placeholder="Digite seu nome">
+        <div class="formulario"> 
+            <form action="" class="formulariom">
+                <fieldset class="fundoform">
+                    <h2 class="tituloform" style="color: lightgray; font-size: 40px; font-family:'Lalezar', system-ui;"> Envie sua mensagem</h2>
+                    <div class="itensformulario">
+                        <label class="palavrasform"> Nome </label>
+                        <input type="text" name="nome" placeholder="Digite seu nome" required>
                     </div>
-                    <div>
-                        <label> Email </label>
-                        <input type="email" name="email" placeholder="Digite seu email">
+                    <div class="itensformulario">
+                        <label class="palavrasform"> Email </label>
+                        <input type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="itensformulario">
+                        <textarea style="font-size: 20px; font-family:'Lalezar', system-ui;" name="Mensagem" placeholder="Digite aqui sua Mensagem"></textarea>
+                    </div>
+                    <div class="itensformulario">
+                        <input type="submit">
                     </div>
                 </fieldset>
             </form>

@@ -22,7 +22,6 @@ header{
 }
 .menu{
     width: 75%;
-   
     text-transform: uppercase;
 
 }
@@ -47,4 +46,30 @@ header{
 }
 .menu nav a:hover::after{
     width: 50px;
+}
+
+.main_galeria{
+    display: flex;
+}
+
+
+.rodape {
+    position: relative;
+    background-color: orange;
+    display: grid;
+    height: 105px;
+}
+
+.logorodape {
+    position: absolute;
+}
+
+.textorodape {
+    align-self: center;
+    /* Alinhamento vertical em relação ao grid */
+    font-family: "Lalezar", system-ui;
+    color: whitesmoke;
+    font-size: 25px;
+    justify-self: center;
+    /* Alinhamento horizontal em relação ao grid */
 }

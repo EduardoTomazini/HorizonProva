@@ -68,6 +68,36 @@ body {
     background-color: whitesmoke;
 }
 
+.formulario{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formulariom{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.itensformulario{
+    display: flex; /* Altera o comportamento para flex */
+    flex-direction: column; /* Organiza o label e input verticalmente */
+}
+
+.palavrasform{
+    font-family: "Lalezar", system-ui;
+    font-size: 30px;
+}
+.fundoform{
+    border-radius: 10px;
+    background-color: orange;
+    width: 500px;
+    height: 225px;
+    
+}
+
 .main_contato{
     flex: 1;
 }
