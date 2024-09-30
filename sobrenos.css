@@ -65,6 +65,21 @@ header {
     width: 50px;
 }
 
+.paragrafo{
+    font-family: 'Lalezar', system-ui;
+    font-size: 40px;
+    color: grey;
+}
+
+.botao{
+    width: 170px;
+    height: 90px;
+    border-radius: 10px;
+    margin: auto;
+    font-family: 'Lalezar', system-ui;
+    font-size: 30px;
+}
+
 .rodape {
     position: relative;
     background-color: orange;
