@@ -1,40 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
-*{
-    margin: 0; /* Define a margem geral do projeto (pois esta na *) */
-    padding: 0; /* Define o espaço entre o conteúdo de um elemento e sua borda */
-    box-sizing: border-box; /* Determina como o tamanho total de um elemento é calculado */
+
+* {
+    margin: 0;
+    /* Define a margem geral do projeto (pois esta na *) */
+    padding: 0;
+    /* Define o espaço entre o conteúdo de um elemento e sua borda */
+    box-sizing: border-box;
+    /* Determina como o tamanho total de um elemento é calculado */
 }
-.container{
-    max-width: 3000px; /* Define a largura máxima do container */
-    display: flex; /* Coloca o container como um container flexível de acordo com o modelo flexbox, ou seja os filhos são tratados como itens flexiveis e são alinhados e distribuidos */
-    align-items: center; /* Alinha os itens filhos ao longo do eixo transversa */
-    justify-content: center; /* Alinha os itens filhos ao longo do eixo principal */
+
+.container {
+    max-width: 3000px;
+    /* Define a largura máxima do container */
+    display: flex;
+    /* Coloca o container como um container flexível de acordo com o modelo flexbox, ou seja os filhos são tratados como itens flexiveis e são alinhados e distribuidos */
+    align-items: center;
+    /* Alinha os itens filhos ao longo do eixo transversa */
+    justify-content: center;
+    /* Alinha os itens filhos ao longo do eixo principal */
 }
-header{
-    background-color:orange;
-    width: 100%; /*Define a largura de um elemento*/
+
+header {
+    background-color: orange;
+    width: 100%;
+    /*Define a largura de um elemento*/
     padding: 5px;
 
 }
-.logo{
+
+.logo {
     width: 20%;
-    
+
 }
-.menu{
+
+.menu {
     width: 75%;
     text-transform: uppercase;
 
 }
-.menu nav a{
-    
+
+.menu nav a {
+
     font-size: 40px;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
     padding-right: 90px;
     font-family: "Lalezar", system-ui;
     position: relative;
 }
-.menu nav a::after{
+
+.menu nav a::after {
     content: " ";
     width: 0px;
     height: 4px;
@@ -44,12 +59,78 @@ header{
     left: 0;
     transition: 0.5s;
 }
-.menu nav a:hover::after{
+
+.menu nav a:hover::after {
     width: 50px;
 }
 
-.main_galeria{
+.main_galeria {
     display: flex;
+    background-color: whitesmoke;
+}
+
+.imagens {
+    width: 450px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 50px repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div4 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div7 {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.div8 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.div9 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div10 {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.div11 {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.div12 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.div13 {
+    grid-area: 5 / 3 / 6 / 4;
 }
 
 

@@ -68,6 +68,16 @@ body {
     background-color: whitesmoke;
 }
 
+.FaleConosco{
+    font-size: 80px;
+    font-family: "Lalezar", system-ui;
+}
+
+.textopreform{
+    font-size: 20px;
+    font-family: "Lalezar", system-ui;
+}
+
 .formulario{
     height: 100vh;
     display: flex;
