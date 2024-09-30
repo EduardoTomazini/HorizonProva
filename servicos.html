@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="servicos.css">
+    <style>
+        .imagens{
+            width: 450px;
+            border-radius: 10px;
+            margin-left: 125px;
+        }
+    </style>
     <title>Horizon Construtora</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -26,6 +35,60 @@
     </header>
     <div class="main_servicos">
 
+        <div style="display: flex;">
+            <div class="parent">
+                <div class="div1" style="display: flex;">
+                    <h1 style="color: orange; font-size: 60px; font-family:'Lalezar', system-ui; margin: auto; margin-top: -15px;">Oferecemos os seguintes Serviços</h1>
+                </div>
+                <div class="div2">
+                    <img class="imagens" src="images/casa2.jpg" alt="Casa Residencial">
+                </div>
+                <div class="div3">
+                    <p class="paragrafos">
+                        A Construtora Horizon se destaca na construção residencial com projetos personalizados que
+                        refletem o estilo de cada cliente. Com mais de 40 anos de experiência, garantimos qualidade e
+                        conforto em cada etapa, tornando seu lar dos sonhos uma realidade.
+                    </p>
+                </div>
+                <div class="div4">
+                    <img class="imagens" src="images/loja1.jpg" alt="Loja Comercial">
+                </div>
+                <div class="div5">
+                    <p class="paragrafos">
+                        A Construtora Horizon é referência em construção comercial, oferecendo soluções personalizadas
+                        para cada negócio. Com mais de 40 anos de experiência, garantimos qualidade e funcionalidade em
+                        projetos que atendem às expectativas e impulsionam o sucesso da empresa.
+                    </p>
+                </div>
+                <div class="div6">
+                    <img class="imagens" src="images/predio3.jpg" alt="Predio Comercial">
+                </div>
+                <div class="div7">
+                    <p class="paragrafos">
+                        A Construtora Horizon se destaca na construção de prédios empresariais, oferecendo projetos que
+                        unem inovação e funcionalidade. Com 40 anos de experiência, garantimos estruturas de alta
+                        qualidade que promovem ambientes eficientes e inspiradores para os negócios.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sonhos" style="display: flex; flex-direction: column;">
+            <h1 style="color: orange; font-size: 60px; font-family:'Lalezar', system-ui; margin: auto; margin-top: -150px; "">Não espere para realizar seu sonho</h1>
+            <button class="botao" type="button">
+                <a href="contato.html" style="text-decoration: none;">Contato</a>
+            </button>
+            <br>
+        </div>
+
+
     </div>
+    <footer>
+        <div class="rodape">
+            <img class="logorodape" src="images/logo.png" alt="Horizon Logo">
+            <p class="textorodape">Projeto desenvolvido para a avaliação parcial da disciplina de Desenvolvimento web
+                por Eduardo Gondim Tomazini - 837757</p>
+        </div>
+    </footer>
 </body>
+
 </html>
