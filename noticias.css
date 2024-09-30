@@ -1,41 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
-*{
-    margin: 0; /* Define a margem geral do projeto (pois esta na *) */
-    padding: 0; /* Define o espaço entre o conteúdo de um elemento e sua borda */
-    box-sizing: border-box; /* Determina como o tamanho total de um elemento é calculado */
+
+* {
+    margin: 0;
+    /* Define a margem geral do projeto (pois esta na *) */
+    padding: 0;
+    /* Define o espaço entre o conteúdo de um elemento e sua borda */
+    box-sizing: border-box;
+    /* Determina como o tamanho total de um elemento é calculado */
 }
-.container{
-    max-width: 3000px; /* Define a largura máxima do container */
-    display: flex; /* Coloca o container como um container flexível de acordo com o modelo flexbox, ou seja os filhos são tratados como itens flexiveis e são alinhados e distribuidos */
-    align-items: center; /* Alinha os itens filhos ao longo do eixo transversa */
-    justify-content: center; /* Alinha os itens filhos ao longo do eixo principal */
+
+.container {
+    max-width: 3000px;
+    /* Define a largura máxima do container */
+    display: flex;
+    /* Coloca o container como um container flexível de acordo com o modelo flexbox, ou seja os filhos são tratados como itens flexiveis e são alinhados e distribuidos */
+    align-items: center;
+    /* Alinha os itens filhos ao longo do eixo transversa */
+    justify-content: center;
+    /* Alinha os itens filhos ao longo do eixo principal */
 }
-header{
-    background-color:orange;
-    width: 100%; /*Define a largura de um elemento*/
+
+header {
+    background-color: orange;
+    width: 100%;
+    /*Define a largura de um elemento*/
     padding: 5px;
 
 }
-.logo{
+
+.logo {
     width: 20%;
-    
+
 }
-.menu{
+
+.menu {
     width: 75%;
-   
+
     text-transform: uppercase;
 
 }
-.menu nav a{
-    
+
+.menu nav a {
+
     font-size: 40px;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
     padding-right: 90px;
     font-family: "Lalezar", system-ui;
     position: relative;
 }
-.menu nav a::after{
+
+.menu nav a::after {
     content: " ";
     width: 0px;
     height: 4px;
@@ -45,6 +60,87 @@ header{
     left: 0;
     transition: 0.5s;
 }
-.menu nav a:hover::after{
+
+.menu nav a:hover::after {
     width: 50px;
+}
+
+.imagens {
+    width: 450px;
+    margin-left: 225px;
+    border-radius: 10px;
+}
+
+.noticias{
+    display: flex;
+}
+.NoticiaPirarucu{
+    font-family: 'Lalezar', system-ui;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.NoticiaObra{
+    font-family: 'Lalezar', system-ui;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.parent {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px repeat(2, 1fr);
+    grid-column-gap: 325px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div3 {
+    margin-left: 25px;
+    grid-area: 3 / 1 / 4 / 2;
+    width: 1000px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5 {
+    grid-area: 3 / 2 / 4 / 3;
+    width: 1000px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+
+.rodape {
+    bottom: 0;
+    position: relative;
+    background-color: orange;
+    display: grid;
+    height: 105px;
+}
+
+.logorodape {
+    position: absolute;
+}
+
+.textorodape {
+    align-self: center;
+    /* Alinhamento vertical em relação ao grid */
+    font-family: "Lalezar", system-ui;
+    color: whitesmoke;
+    font-size: 25px;
+    justify-self: center;
+    /* Alinhamento horizontal em relação ao grid */
 }
