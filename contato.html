@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
     <style>
-        .InformacoesContato{
-            font-size: 20px;
-            font-family: "Lalezar", system-ui;
-        }
+        .textoPreForm{
+            font-family: 'Lalezar', system-ui;
+            font-size: 25px;
+            margin: auto;
+            color: gray;
+    }
     </style>
     <title>Horizon Construtora</title>
 </head>
@@ -32,61 +34,65 @@
             </div>
         </div>
     </header>
-    <div class="main_contato">
-        <h1 class="FaleConosco">Fale conosco</h1>
-        <p class="textopreform">
-            Na Horizon, estamos sempre prontos para ouvir você!
-            Seja para tirar dúvidas, solicitar informações sobre nossos projetos ou discutir seu próximo sonho de
-            construção,
-            nossa equipe está à disposição para ajudar.
-        </p>
-        <div class="InformacoesContato">
-            <h2 class="infoContato">
-                Informações de Contato
-            </h2>
-            <p class="telefone">
-                Telefone: (XX) XXXX-XXXX
-            </p>
-            <p class="email">
-                E-mail: contato@horizonconstrutora.com.br
-            </p>
-            <p class="endereco">
-                Endereço: Avenida das Construtoras, 123, Bairro Exemplo, Cidade - Estado
-            </p>
-            <br>
-            <h3 class="horarioatendimento">
-                Horário de Atendimento
-            </h3>
-            <p class="horarios">
-                Segunda a Sexta: 08h às 18h
+    <div class="main_contato" >
+        <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: column;">
+                <h1 style="color: orange; font-size: 60px; font-family:'Lalezar', system-ui; margin: auto;">Fale Conosco</h1>
+                <p class="textoPreForm">
+                    Na Horizon, estamos sempre prontos para ouvir você!
+                    Seja para tirar dúvidas, solicitar informações sobre nossos projetos ou discutir seu próximo sonho
+                    de
+                    construção,
+                    nossa equipe está à disposição para ajudar.
+                </p>
+            </div>
+            <div class="InformacoesContato">
+                <h2>informações de contato</h2>
+                <p class="Telefone">
+                    Telefone: (XX) XXXX-XXXX
+                </p>
+                <p class="Email">
+                    E-mail: contato@horizonconstrutora.com.br
+                </p>
+                <p class="endereco">
+                    Endereço: Avenida das Construtoras, 123, Bairro Exemplo, Cidade - Estado
+                </p>
                 <br>
-                Sábado: 09h às 13h
-                <br>
-                Domingo: Fechado
-            </p>
+                <h3 class="horarioatendimento">
+                    Horário de Atendimento
+                </h3>
+                <p class="horarios">
+                    Segunda a Sexta: 08h às 18h
+                    <br>
+                    Sábado: 09h às 13h
+                    <br>
+                    Domingo: Fechado
+                </p>
+            </div>
+            <div class="formu">
+                <form class="formulario">
+                    <label class="labeltexto" for="nome">Nome</label>
+                    <input class="inputtext"" type="text" name="nome" id="nome" required placeholder="Insira seu nome">
+                    <label class="labeltexto" for="email">Email</label>
+                    <input class="inputtext" type="email" name=email"" id="email" required placeholder="Insira seu Email">
+                    <label class="labeltexto" for="phone">Telefone</label>
+                    <input class="inputtext" type="tel" name="phone" id="phone" required placeholder="Insira seu Telefone">
+                    <label class="labeltexto" for="tipo"> Selecione o tipo de constução</label>
+                    <select style="font-size: 20px; font-family: 'La';" name="tipo" id="tipo">
+                        <option value="residencial"> Residencial</option>
+                        <option value="comercial"> Comercial</option>
+                        <option value="empresarial"> Empresarial</option>
+                    </select>
+                    <label class="labeltexto" for="pessoa" style="justify-self: center;">Selecione o que te representa</label>
+                    <label class="labeltexto" for="pf">Pessoa Fisica</label>
+                    <input type="radio" name="opcao" id="pf" value="pf">
+                    <label class="labeltexto" for="pj" >Pessoa Juridica</label>
+                    <input type="radio" name="opcao" id="pj" value="pj">
+                    <textarea style=" resize: none; width: 400px; height: 600px; margin-left: 40px" name="mensgaem" id="mensgaem"></textarea>
+                    <input type="submit" style="margin-left: 40px; width: 400px;">
+                </form>
+            </div>
         </div>
-        <div class="formulario"> 
-            <form action="" class="formulariom">
-                <fieldset class="fundoform">
-                    <h2 class="tituloform" style="color: lightgray; font-size: 40px; font-family:'Lalezar', system-ui;"> Envie sua mensagem</h2>
-                    <div class="itensformulario">
-                        <label class="palavrasform"> Nome </label>
-                        <input type="text" name="nome" placeholder="Digite seu nome" required>
-                    </div>
-                    <div class="itensformulario">
-                        <label class="palavrasform"> Email </label>
-                        <input type="email" name="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div class="itensformulario">
-                        <textarea style="font-size: 20px; font-family:'Lalezar', system-ui;" name="Mensagem" placeholder="Digite aqui sua Mensagem"></textarea>
-                    </div>
-                    <div class="itensformulario">
-                        <input type="submit">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-
     </div>
     <footer>
         <div class="rodape">

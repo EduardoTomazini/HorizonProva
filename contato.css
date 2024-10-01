@@ -35,6 +35,7 @@ header {
 
 .menu {
     width: 75%;
+
     text-transform: uppercase;
 
 }
@@ -66,53 +67,48 @@ header {
 
 body {
     background-color: whitesmoke;
-}
-
-.FaleConosco{
-    font-size: 80px;
-    font-family: "Lalezar", system-ui;
-}
-
-.textopreform{
-    font-size: 20px;
-    font-family: "Lalezar", system-ui;
-}
-
-.formulario{
-    height: 100vh;
-    display: flex;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-.formulariom{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.itensformulario{
-    display: flex; /* Altera o comportamento para flex */
-    flex-direction: column; /* Organiza o label e input verticalmente */
-}
-
-.palavrasform{
-    font-family: "Lalezar", system-ui;
-    font-size: 30px;
-}
-.fundoform{
-    border-radius: 10px;
+.InformacoesContato{
     background-color: orange;
     width: 500px;
-    height: 225px;
-    
+    margin-left: 110px;
+    margin-top: 20px;
+    font-family: 'Lalezar';
+    font-size: 20px;
+    border-radius: 10px;
+}
+.labeltexto{
+    font-family: 'Lalezar';
+    font-size: 25px;
+}
+.formu {
+    display: flex;
+    margin: auto;
+    margin-top: -333px;
+    margin-bottom: 160px;
+    padding: 15px;
+    height: 600px;
+    width: 500px;
+    background-color: orange;
+    border-radius: 10px;
 }
 
-.main_contato{
-    flex: 1;
+.inputtext{
+    font-size: 20px; 
+    font-family:'Lalezar', system-ui;
 }
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .rodape {
-    bottom: 0;
     position: relative;
     background-color: orange;
     display: grid;
